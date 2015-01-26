@@ -69,7 +69,7 @@ def domain_name(num):
             name[index-1] += 1
             
 def run(domain_lenth):
-    """执行，如果每被注册就写到文件中"""
+    """执行，如果没被注册就写到文件中"""
     f = open(fname, 'a')
     for domain in domain_name(domain_lenth):
         domain += suffix
